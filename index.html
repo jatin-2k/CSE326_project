@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="indexcss.css">
+  <link rel="icon" type="image/x-icon" href="images/uni_logo1.jpg">
+  <script type="text/javascript">
+  function myfun1() {
+    document.getElementById("home-page").style.display = "none" ;
+    document.getElementById("myCarousel").style.display = "unset" ;
+    document.getElementById("home1-active").style.display = "none" ;
+    document.getElementById("home1-de-active").style.display = "unset" ;
+    document.getElementById("gallery-de-active").style.display = "none" ;
+    document.getElementById("gallery-active").style.display = "unset" ;
+  }
+  function myfun2() {
+    document.getElementById("home-page").style.display = "unset" ;
+    document.getElementById("myCarousel").style.display = "none" ;
+    document.getElementById("home1-active").style.display = "unset" ;
+    document.getElementById("home1-de-active").style.display = "none" ;
+    document.getElementById("gallery-de-active").style.display = "unset" ;
+    document.getElementById("gallery-active").style.display = "none" ;
+  }
+  </script>
+</head>
+<body>
+
+  <header id="header">
+    <img align="center" src="images/uni_pic_1280.jpg" alt="University's picture">
+  </header>
+
+  <nav id="nav" class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#header">Business University</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+<!-- ---------------------------------------------------------home page------------------------------------------------------- -->
+
+  <main id="home-page" class="container-fluid text-center" >    
+    <div class="row content">
+      <aside class="col-sm-2">
+        <h1>Notice</h1>
+        <hr>
+        <dl class="text-left">
+          <dt><a href="#">Important Info.</a></dt>
+          <dd>
+            IIT Delhi has released GATE 2020 Result on March 13, 2020 for all the 25 disciplines. Candidates who have appeared for the exam in February can check their results by visiting application portal appsgate.iitd.ac.in. The institute has also declared GATE Cut Off, for ME it is 34.0, for CE 32.9, and for EC 28.8. Candidates can now download their GATE 2020 scorecards.
+          </dd>
+          <hr>
+          <dt><a href="#">Health Tip</a></dt>
+          <dd>
+            Cabbage is considered to be an excellent home remedy for obesity. Recent research has revealed that a valuable chemical called tartaric acid is present in this vegetable which inhibits the conversion of sugar and other carbohydrates into fat. Hence it is of great value in weight reduction.
+          </dd>
+        </dl>
+      </aside>
+      <article class="col-sm-8 text-left"> 
+        <h1>Welcome</h1>
+        <p>A university is an institution of higher education and research, which awards academic degrees in various academic disciplines. Universities typically provide undergraduate education and postgraduate education.A university is an institution of higher education and research, which awards academic degrees in various academic disciplines. Universities typically provide undergraduate education and postgraduate education.A university is an institution of higher education and research, which awards academic degrees in various academic disciplines. Universities typically provide undergraduate education and postgraduate education.</p>
+        <hr>
+        <h3 id="Gallery">Happenings</h3>
+        <img src="images/gal1_1280.jpg">
+        <div class="img-gallery row" >
+          <img class="gal-img col-sm-4" src="images/gal2_640.jpg">
+          <img class="gal-img col-sm-4" src="images/gal3_640.jpg">
+          <img class="gal-img col-sm-4" src="images/gal4_640.jpg">
+        </div>
+      </article>
+      <aside class="col-sm-2">
+        <h1>Events</h1>
+        <hr>
+        <dl>
+          <dt><a href="#">TEDx talks</a></dt>
+          <dd>
+            Did you know that the iconic idea-sharing forum TEDx started as a campus event at USC in 2009? Now, the platform encourages campuses to start their own version of the digitally evolved lecture series. Capturing such talks on video makes for powerful, potentially viral social media. For details on how to start a campus TEDx, visit the website.
+          </dd>
+          <hr>
+          <dt><a href="#">Craft workshops</a></dt>
+          <dd>
+            Host a workshop where students can make their own dorm room décor — think plant hangers, terrariums, or recycled frames for their art. Get inspiration from Pinterest, Instagram, or Etsy for the latest crafting trends. 
+          </dd>
+        </dl>
+      </aside>
+    </div>
+  </main>
+<!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+  <footer id="footer" class="container-fluid text-center">
+
+    <p>
+      <img width="75px" height="auto" src="images/uni_logo1.jpg" alt class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;">
+      India's Largest University* Business University, Jalandhar-Delhi, G.T. Road, Phagwara, Punjab (INDIA) -144411.
+      Website: http://www.example.com/
+    </p>
+
+    <nav id="nav" class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#header">Business University</a>
+        </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+      </div>
+    </nav>
+
+  </footer>
+
+</body>
+</html>
